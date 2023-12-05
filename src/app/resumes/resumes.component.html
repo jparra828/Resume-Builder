@@ -1,0 +1,16 @@
+<!-- resumes.component.html -->
+<ul>
+    <li *ngFor="let resume of resumes">
+      <h3>{{ resume.name }} - {{ resume.email }}</h3>
+      <p>Phone: {{ resume.phone }}</p>
+      <p>School: {{ resume.school }}, Graduation: {{ resume.graduationDate }}</p>
+      <p>Degree: {{ resume.degreeType }}</p>
+      <p>Work: {{ resume.occupation }} ({{ resume.startDate | date }} - {{ resume.endDate | date }})</p>
+      <p>Responsibilities: {{ resume.responsibilities }}</p>
+      <p>Project: {{ resume.projectName }} - {{ resume.projectDescription }}</p>
+      <p>Award: {{ resume.awardTitle }} ({{ resume.awardDate | date }})</p>
+      <button (click)="deleteResume(resume.id)">Delete</button>
+      <button [routerLink]="['/resume-make', resume.id]">Edit</button>
+    </li>
+  </ul>
+  
