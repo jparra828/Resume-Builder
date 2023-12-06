@@ -10,7 +10,7 @@ export class HeaderComponent {
   links = [
     { name: 'About', path: '/about' },
     { name: 'Resume Make', path: '/resume-make' },
-    { name: 'Resumes', path: '/resumes' }
+    { name: 'Resume\'s', path: '/resumes' }
   ];
 
 }

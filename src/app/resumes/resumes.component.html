@@ -26,6 +26,7 @@
     <div class="actions">
       <button (click)="deleteResume(resume.id)">Delete</button>
       <button [routerLink]="['/resume-make', resume.id]">Edit</button>
+      <button (click)="downloadResume(resume.id)">Download Resume</button>
     </div>
   </li>
 </ul>

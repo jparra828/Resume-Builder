@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   aboutData = {
-    title: "About Resume Builder",
+    title: "About Resumake",
     description: {
-      intro: "This resume builder project is developed by Joshua Parra-Lam",
+      intro: "This resume maker project is developed by Joshua Parra-Lam",
       purposes: [
         "Easy and quick resume creation",
         "User-friendly interface",
-        "Customizable templates"
+        "Downloadable PDF resume!!"
       ],
       outro: "Explore the features and create your professional resume in minutes!"
     },
