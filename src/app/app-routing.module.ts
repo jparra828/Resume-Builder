@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'resume-make', component: ResumeMakeComponent },
   { path: 'resumes', component: ResumesComponent },
-  { path: '', redirectTo: '/about', pathMatch: 'full' }
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: 'resume-make/:id', component: ResumeMakeComponent },
 ];
 
 @NgModule({

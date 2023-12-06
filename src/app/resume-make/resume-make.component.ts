@@ -38,10 +38,15 @@ export class ResumeMakeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const resumeId = this.route.snapshot.paramMap.get('id');
-    if (resumeId) {
-      this.resume = this.resumeService.getResumeById(+resumeId) || this.resume;
-    }
+    this.route.paramMap.subscribe(params => {
+      const resumeId = params.get('id');
+      if (resumeId) {
+        const fetchedResume = this.resumeService.getResumeById(+resumeId);
+        if (fetchedResume) {
+          this.resume = { ...fetchedResume };
+        }
+      }
+    });
   }
 
   onSubmit(resumeData: any): void {

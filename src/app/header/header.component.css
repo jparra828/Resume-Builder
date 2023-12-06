@@ -1,7 +1,6 @@
-#appHeader {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+mat-toolbar#appHeader {
+  background-color: #000; 
+  color: #ffd700; 
 }
 
 .headerList {
@@ -14,16 +13,17 @@
 }
 
 .headerListItem {
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-.headerLink {
-    font-size: large;
-}
-
-.active {
-    background-color: #e0e0e0;
-}
+    margin-right: 20px;
+  }
+  
+  .headerLink {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .headerLink:hover, .headerLink.active {
+    color: #ccac00; 
+    text-decoration: none; 
+  }

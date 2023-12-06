@@ -1,16 +1,31 @@
-<!-- resumes.component.html -->
 <ul>
-    <li *ngFor="let resume of resumes">
-      <h3>{{ resume.name }} - {{ resume.email }}</h3>
-      <p>Phone: {{ resume.phone }}</p>
-      <p>School: {{ resume.school }}, Graduation: {{ resume.graduationDate }}</p>
-      <p>Degree: {{ resume.degreeType }}</p>
-      <p>Work: {{ resume.occupation }} ({{ resume.startDate | date }} - {{ resume.endDate | date }})</p>
-      <p>Responsibilities: {{ resume.responsibilities }}</p>
-      <p>Project: {{ resume.projectName }} - {{ resume.projectDescription }}</p>
-      <p>Award: {{ resume.awardTitle }} ({{ resume.awardDate | date }})</p>
+  <li *ngFor="let resume of resumes" class="resume-item">
+    <h1>{{ resume.name }}</h1>
+    <p class="contact-info">{{ resume.email }} | Phone: {{ resume.phone }}</p>
+
+    <h2>Education</h2>
+    <p>School: {{ resume.school }}, Graduation: {{ resume.graduationDate | date }}</p>
+    <p>Degree: {{ resume.degreeType }}</p>
+
+    <h2>Work Experience</h2>
+    <p>Occupation: {{ resume.occupation }}</p>
+    <p>Dates: {{ resume.startDate | date }} - {{ resume.endDate | date }}</p>
+    <p>Responsibilities: {{ resume.responsibilities }}</p>
+
+    <h2>Skills</h2>
+    <p>{{ resume.skills }}</p>
+
+    <h2>Projects</h2>
+    <p>{{ resume.projectName }} - {{ resume.projectDescription }}</p>
+    <p>{{ resume.project2Name }} - {{ resume.project2Description }}</p>
+
+    <h2>Awards</h2>
+    <p>{{ resume.awardTitle }} ({{ resume.awardDate | date }})</p>
+    <p>{{ resume.awardTitle2 }} ({{ resume.awardDate2 | date }})</p>
+
+    <div class="actions">
       <button (click)="deleteResume(resume.id)">Delete</button>
       <button [routerLink]="['/resume-make', resume.id]">Edit</button>
-    </li>
-  </ul>
-  
+    </div>
+  </li>
+</ul>

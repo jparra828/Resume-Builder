@@ -1,6 +1,8 @@
 <mat-card class="about-card">
     <mat-card-header>
-        <div mat-card-avatar class="about-photo" [style.background-image]="'url(' + profilePhotoUrl + ')'"></div>
+        <div class="photo-container">
+            <div mat-card-avatar class="about-photo" [style.background-image]="'url(' + profilePhotoUrl + ')'"></div>
+        </div>
         <mat-card-title>{{ aboutData.title }}</mat-card-title>
     </mat-card-header>
     <mat-card-content>
@@ -10,7 +12,9 @@
                 {{ purpose }}
             </li>
         </ul>
-        <p class="about-text">{{ aboutData.description.outro }}</p>
+        <div class="outro-container">
+            <p class="about-text">{{ aboutData.description.outro }}</p>
+        </div>
     </mat-card-content>
     <mat-card-footer>
         <div class="about-links">
@@ -23,3 +27,5 @@
                 {{ link.name }}
             </a>
         </div>
+    </mat-card-footer>
+</mat-card>

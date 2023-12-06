@@ -1,106 +1,114 @@
 <form #resumeForm="ngForm" (ngSubmit)="onSubmit(resumeForm.value)" class="resume-form">
+
   <div class="form-section">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" ngModel required>
+    <input type="text" id="name" name="name" [(ngModel)]="resume.name" required>
   </div>
+
 
   <div class="form-section">
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" ngModel required>
+    <input type="email" id="email" name="email" [(ngModel)]="resume.email" required>
   </div>
+
 
   <div class="form-section">
     <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" ngModel required>
+    <input type="tel" id="phone" name="phone" [(ngModel)]="resume.phone" required>
   </div>
+
 
   <h2 class="form-header">Education</h2>
   <div class="form-section">
     <label for="school">School Name:</label>
-    <input type="text" id="school" name="school" ngModel required>
+    <input type="text" id="school" name="school" [(ngModel)]="resume.school" required>
   </div>
 
   <div class="form-section">
     <label for="graduationDate">Graduation Date:</label>
-    <input type="date" id="graduationDate" name="graduationDate" ngModel required>
+    <input type="date" id="graduationDate" name="graduationDate" [(ngModel)]="resume.graduationDate" required>
   </div>
 
   <div class="form-section">
     <label for="degreeType">Type of Degree:</label>
-    <input type="text" id="degreeType" name="degreeType" ngModel required>
+    <input type="text" id="degreeType" name="degreeType" [(ngModel)]="resume.degreeType" required>
   </div>
+
 
   <h2 class="form-header">Work Experience</h2>
   <div class="form-section">
     <label for="occupation">Place of Occupation:</label>
-    <input type="text" id="occupation" name="occupation" ngModel required>
+    <input type="text" id="occupation" name="occupation" [(ngModel)]="resume.occupation" required>
   </div>
 
   <div class="form-section">
     <label for="startDate">Start Date:</label>
-    <input type="date" id="startDate" name="startDate" ngModel required>
+    <input type="date" id="startDate" name="startDate" [(ngModel)]="resume.startDate" required>
   </div>
 
   <div class="form-section">
     <label for="endDate">End Date:</label>
-    <input type="date" id="endDate" name="endDate" ngModel>
+    <input type="date" id="endDate" name="endDate" [(ngModel)]="resume.endDate">
   </div>
 
   <div class="form-section">
     <label for="responsibilities">Responsibilities:</label>
-    <textarea id="responsibilities" name="responsibilities" ngModel required></textarea>
+    <textarea id="responsibilities" name="responsibilities" [(ngModel)]="resume.responsibilities" required></textarea>
   </div>
+
 
   <h2 class="form-header">Skills</h2>
   <div class="form-section">
     <label for="skills">Skills:</label>
-    <textarea id="skills" name="skills" ngModel required></textarea>
+    <textarea id="skills" name="skills" [(ngModel)]="resume.skills" required></textarea>
   </div>
+
 
   <h2 class="form-header">Personal Projects</h2>
   <div class="form-section">
     <label for="projectName">Project Name:</label>
-    <input type="text" id="projectName" name="projectName" ngModel required>
+    <input type="text" id="projectName" name="projectName" [(ngModel)]="resume.projectName" required>
   </div>
 
   <div class="form-section">
     <label for="projectDescription">Project Description:</label>
-    <textarea id="projectDescription" name="projectDescription" ngModel required></textarea>
+    <textarea id="projectDescription" name="projectDescription" [(ngModel)]="resume.projectDescription" required></textarea>
   </div>
 
 
   <div class="form-section">
-    <label for="project2Name">Project Name:</label>
-    <input type="text" id="project2Name" name="project2Name" ngModel required>
+    <label for="project2Name">Second Project Name:</label>
+    <input type="text" id="project2Name" name="project2Name" [(ngModel)]="resume.project2Name" required>
   </div>
   <div class="form-section">
-    <label for="project2Description">Project Description:</label>
-    <textarea id="project2Description" name="project2Description" ngModel required></textarea>
+    <label for="project2Description">Second Project Description:</label>
+    <textarea id="project2Description" name="project2Description" [(ngModel)]="resume.project2Description" required></textarea>
   </div>
 
 
   <h2 class="form-header">Awards</h2>
   <div class="form-section">
     <label for="awardTitle">Title of Award:</label>
-    <input type="text" id="awardTitle" name="awardTitle" ngModel required>
+    <input type="text" id="awardTitle" name="awardTitle" [(ngModel)]="resume.awardTitle" required>
   </div>
 
   <div class="form-section">
-    <label for="awardDate">Date:</label>
-    <input type="date" id="awardDate" name="awardDate" ngModel required>
+    <label for="awardDate">Award Date:</label>
+    <input type="date" id="awardDate" name="awardDate" [(ngModel)]="resume.awardDate" required>
   </div>
 
   <div class="form-section">
-    <label for="awardTitle2">Title of Award:</label>
-    <input type="text" id="awardTitle2" name="awardTitle2" ngModel required>
+    <label for="awardTitle2">Second Title of Award:</label>
+    <input type="text" id="awardTitle2" name="awardTitle2" [(ngModel)]="resume.awardTitle2" required>
   </div>
 
   <div class="form-section">
-    <label for="awardDate2">Date:</label>
-    <input type="date" id="awardDate2" name="awardDate2" ngModel required>
+    <label for="awardDate2">Second Award Date:</label>
+    <input type="date" id="awardDate2" name="awardDate2" [(ngModel)]="resume.awardDate2" required>
   </div>
 
+
   <div class="form-section">
-    <button type="submit" [disabled]="!resumeForm.valid">Create Resume</button>
+    <button type="submit" [disabled]="!resumeForm.valid">Create/Update Resume</button>
   </div>
 </form>

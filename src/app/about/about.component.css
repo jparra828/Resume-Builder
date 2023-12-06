@@ -1,36 +1,71 @@
 .about-card {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-  
-  .about-photo {
-    background-size: cover;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
-  
-  .about-text {
-    margin-bottom: 15px;
-  }
-  
-  #purposeList {
-    list-style: inside;
-    padding-left: 0;
-  }
-  
-  .purpose {
-    margin-bottom: 10px;
-  }
-  
-  .about-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .about-link {
-    margin: 0 10px;
-  }
-  
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #ffd700;
+}
+
+.photo-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.mat-card-title {
+  margin-left: 15px;
+}
+
+.mat-card-content {
+  padding: 20px;
+}
+
+.about-text {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#purposeList {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.purpose {
+  margin-bottom: 5px;
+}
+
+.outro-container {
+  margin-bottom: 30px; 
+}
+
+.mat-card-footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 20px; 
+}
+
+.about-links a {
+  color: #000;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.about-links a:hover {
+  color: #ffd700;
+}

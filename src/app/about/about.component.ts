@@ -22,5 +22,5 @@ export class AboutComponent {
     ]
   };
 
-  profilePhotoUrl = 'flick.JPG';
+  profilePhotoUrl = 'assets/flick.JPG';
 }
