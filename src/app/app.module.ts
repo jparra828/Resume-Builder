@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [
     provideClientHydration()

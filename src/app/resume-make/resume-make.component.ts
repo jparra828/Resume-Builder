@@ -20,10 +20,15 @@ export class ResumeMakeComponent implements OnInit {
     startDate: '',
     endDate: '',
     responsibilities: '',
+    skills: '',
     projectName: '',
     projectDescription: '',
+    project2Name: '',
+    project2Description: '',
     awardTitle: '',
-    awardDate: ''
+    awardDate: '',
+    awardTitle2: '',
+    awardDate2: '',
   };
 
   constructor(

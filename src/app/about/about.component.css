@@ -1,0 +1,36 @@
+.about-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .about-photo {
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .about-text {
+    margin-bottom: 15px;
+  }
+  
+  #purposeList {
+    list-style: inside;
+    padding-left: 0;
+  }
+  
+  .purpose {
+    margin-bottom: 10px;
+  }
+  
+  .about-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .about-link {
+    margin: 0 10px;
+  }
+  
