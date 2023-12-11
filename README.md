@@ -1,5 +1,7 @@
 # ResumeBuilder
 
+Before using run 'npm install' and 'npm install jspdf'
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
 
 ## Development server
